@@ -6,7 +6,11 @@ var MyFunction = function() {
   'use strict';
 
   function applyFunction(list, f) {
+		list.forEach(function(val, i, arr) {
+  			arr[i] = f(val);
+  		});
 
+  		return list;
   }
 
   return {
