@@ -5,7 +5,7 @@ var Palindrome = function() {
   'use strict';
 
   function is(word) {
-  return word === word.split('').reverse().join('');
+      return word === word.split('').reverse().join('');
   }
 
   return {
